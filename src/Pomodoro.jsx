@@ -9,10 +9,9 @@ export default function Test() {
   const [seconds, setSeconds] = useState(0);
   const [minutes, setMinutes] = useState(25);
   const [paused, setPaused] = useState(true);
-  const [breakTime, setBreakTime] = useState(true);
+  const [breakTime, setBreakTime] = useState(false);
 
   const timer = useRef();
-  const hello = "disabled";
 
   const displaySeconds = seconds < 10 ? `0${seconds}` : seconds;
   const displayMinutes = minutes < 10 ? `0${minutes}` : minutes;
@@ -55,7 +54,6 @@ export default function Test() {
       } else {
         setBreakTime(false);
         setMinutes(25);
-        resetButtonColor.current = "outline-info";
       }
     }
     return () => clearInterval(timer.current);
