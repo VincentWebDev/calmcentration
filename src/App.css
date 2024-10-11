@@ -1,0 +1,35 @@
+body {
+  /* background-color: rgb(204, 146, 255); */
+  color: #282828;
+  font-family: "Roboto Mono", monospace;
+}
+
+.App {
+  /* display: grid; */
+  height: 100vh;
+  justify-items: center;
+  align-content: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.inner {
+  width: 70vw;
+  /* height: 70vh; */
+  background-color: hsl(255, 100%, 97%);
+  border-radius: 10px;
+  display: grid;
+  justify-items: center;
+  padding: 40px;
+}
+
+.message {
+  font-size: 0.5em;
+  min-height: 1.3em;
+  margin-bottom: 0.5em;
+}
+
+.btn {
+  min-width: 200px;
+}
+
+
