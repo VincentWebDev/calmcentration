@@ -7,7 +7,7 @@ import { Badge, Button, Container, Row, Col } from "react-bootstrap";
 
 export default function Test() {
   const [seconds, setSeconds] = useState(0);
-  const [minutes, setMinutes] = useState(25);
+  const [minutes, setMinutes] = useState(1);
   const [paused, setPaused] = useState(true);
   const [breakTime, setBreakTime] = useState(false);
 
@@ -53,6 +53,7 @@ export default function Test() {
         setMinutes(5);
       } else {
         setBreakTime(false);
+        breakTimeAudio.play();
         setMinutes(25);
       }
     }
