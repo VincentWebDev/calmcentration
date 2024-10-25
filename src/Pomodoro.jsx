@@ -7,7 +7,7 @@ import { Badge, Button, Container, Row, Col } from "react-bootstrap";
 
 export default function Test() {
   const [seconds, setSeconds] = useState(0);
-  const [minutes, setMinutes] = useState(1);
+  const [minutes, setMinutes] = useState(25);
   const [paused, setPaused] = useState(true);
   const [breakTime, setBreakTime] = useState(false);
 
